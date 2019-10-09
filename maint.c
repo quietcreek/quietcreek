@@ -8,15 +8,9 @@ int main(int argc, char **argv)
 	printf("Enter your first name: ");
 	fgets(first, 255, stdin);
 	first[strlen(first)-1] = '\0'; /* remove the newline at the end */
-
-<<<<<<< HEAD
-	printf("Hello, %s!\n", name);
-	return 0;
-=======
-	printf("Now enter your last name: ");
+		printf("Now enter your last name: ");
 	gets(last); /* buffer overflow? what's that? */
 
 	printf("Hello %s %s!\n", first, last);
  	return 0;
->>>>>>> 6d164a36639688353a9aa0c9ace8707e4d59251b
 }
